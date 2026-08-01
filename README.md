@@ -14,15 +14,10 @@ Think of it as a minimal, hackable alternative to tools like Cursor's agent mode
 
 ## Installation
 
-`recode` is distributed via GitHub and installed with [pipx](https://pypa.github.io/pipx/), which keeps it isolated while making it available as a global command.
+The package is published on PyPI as `recodeai`. Install it with `pip`:
 
 ```bash
-# install pipx if you don't have it
-brew install pipx
-pipx ensurepath
-
-# install recode
-pipx install git+https://github.com/arobaseSuulei/recode-ai.git
+pip install recodeai
 ```
 
 Once installed, the `recode` command is available in any terminal, from any directory.
@@ -113,8 +108,21 @@ recode-ai/
 
 ## Contributing
 
-This project is open source and meant to be a learning resource as much as a tool — issues, questions, and pull requests are welcome.
+This project is open source and meant to be a learning resource as much as a tool — issues, questions, and pull requests are welcome. Source: https://github.com/arobaseSuulei/recode-ai
+
+## Cite recode
+
+If you use `recode` in your own work or writing, please cite it using the following BibTeX entry.
+
+```
+@Misc{recode,
+  title =        {`recode`: a lightweight, hackable coding agent CLI built with smolagents.},
+  author =       {Souleymane},
+  howpublished = {\url{https://github.com/arobaseSuulei/recode-ai}},
+  year =         {2026}
+}
+```
 
 ## License
 
-MIT
+2026 - @4ssulei on X
