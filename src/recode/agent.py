@@ -7,13 +7,13 @@ from recode.tools.memory import remember
 
 load_dotenv()
 
-OPENAI_API_TOKEN=os.environ.get("OPENAI_API_TOKEN")
+OPENAI_API_KEY=os.environ.get("OPENAI_API_KEY")
 
 def create_agent():
   
     model = OpenAIServerModel(
     model_id="gpt-4o-mini",
-    api_key=OPENAI_API_TOKEN,
+    api_key=OPENAI_API_KEY,
     )
 
     agent = CodeAgent(
