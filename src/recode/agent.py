@@ -5,7 +5,7 @@ from recode.tools import read_file,writing_code
 from recode.tools.memory import remember
 
 
-load_dotenv()
+#load_dotenv()
 
 OPENAI_API_KEY=os.environ.get("OPENAI_API_KEY")
 
