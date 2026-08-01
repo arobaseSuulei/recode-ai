@@ -3,8 +3,11 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "recode"
+name = "recodeai"
 version = "0.1.0"
+description = "A lightweight coding agent CLI built with smolagents"
+readme = "README.md"
+requires-python = ">=3.11"
 dependencies = [
     "smolagents[openai]",
     "python-dotenv",
@@ -12,5 +15,6 @@ dependencies = [
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
 [project.scripts]
 recode = "recode.cli:main"
