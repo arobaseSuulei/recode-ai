@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-from smolagents import CodeAgent,OpenAIServerModel
+from smolagents import CodeAgent,OpenAIServerModel,LogLevel
 from recode.tools import read_file,writing_code
 from recode.tools.memory import remember
 
@@ -19,6 +19,7 @@ def create_agent():
     agent = CodeAgent(
     tools=[read_file,writing_code,remember],
     model=model,
+    verbosity_level=LogLevel.ERROR,
     instructions="Quand on te demande de modifier du code, utilise TOUJOURS l'outil "
                  "writing_code pour sauvegarder le résultat sur disque. Ne te contente "
                  "jamais de donner le code en texte dans ta réponse finale. UTILISE toujours read_file pour connaitre le contenu d un fichier avant d ecrire dedans"
