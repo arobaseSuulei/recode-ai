@@ -4,6 +4,8 @@
 
 Think of it as a minimal, hackable alternative to tools like Cursor's agent mode — built to be understood, not just used.
 
+https://github.com/arobaseSuulei/recode-ai-website/blob/main/images/0802.mov
+
 ## Features
 
 - **Read & write files** in your project directly from natural language instructions
