@@ -4,7 +4,13 @@
 
 Think of it as a minimal, hackable alternative to tools like Cursor's agent mode — built to be understood, not just used.
 
-https://github.com/arobaseSuulei/recode-ai-website/blob/main/images/0802.mov
+
+
+https://github.com/user-attachments/assets/9a08d5e2-ee5b-4967-894e-7eed3fb4169d
+
+
+
+
 
 ## Features
 
