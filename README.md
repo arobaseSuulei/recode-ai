@@ -118,6 +118,44 @@ recode-ai/
 
 This project is open source and meant to be a learning resource as much as a tool — issues, questions, and pull requests are welcome. Source: https://github.com/arobaseSuulei/recode-ai
 
+## Development setup
+ 
+Want to run `recode` from source, or contribute to it? Here's how to set it up locally.
+ 
+**Requirements:** Python 3.9+, `git`
+ 
+```bash
+git clone https://github.com/arobaseSuulei/recode-ai.git
+cd recode-ai
+ 
+python3 -m venv venv
+source venv/bin/activate
+ 
+pip install -e .
+```
+ 
+`pip install -e .` reads `pyproject.toml` and installs `recode` in **editable mode** — any change you make to the source in `src/recode/` is picked up immediately, no reinstall needed.
+ 
+Set your API key (a local `.env` file works too, loaded via `python-dotenv`):
+ 
+```bash
+export OPENAI_API_KEY=your_key_here
+```
+ 
+Run it:
+ 
+```bash
+recode
+# or, equivalently:
+python3 -m recode.cli
+```
+ 
+> **Note:** if you've also installed `recodeai` globally via `pip`/`pipx`, the `recode` command might resolve to that version instead of your local one, depending on your `$PATH`. Check with `which recode` — if it doesn't point into `venv/bin/`, call your local build explicitly with `./venv/bin/recode`.
+ 
+## Contributing
+ 
+This project is open source and meant to be a learning resource as much as a tool — issues, questions, and pull requests are welcome. Source: https://github.com/arobaseSuulei/recode-ai
+
 ## Cite recode
 
 If you use `recode` in your own work or writing, please cite it using the following BibTeX entry.
