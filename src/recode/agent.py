@@ -12,8 +12,9 @@ OPENAI_API_KEY=os.environ.get("OPENAI_API_KEY")
 def create_agent():
   
     model = OpenAIServerModel(
-    model_id="gpt-4o-mini",
+    model_id="glm-5.2",
     api_key=OPENAI_API_KEY,
+    api_base="https://opencode.ai/zen/go/v1"
     )
 
     agent = CodeAgent(
