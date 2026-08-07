@@ -27,7 +27,8 @@ client=OpenAI(api_key=OPENAI_API_KEY)
 
 response = client.responses.create(
     model="gpt-4o-mini",
-    input=instr+prompt,
+    input=prompt,
+    instructions=instr
 )
 
 print(f"Token Output : {response.usage.output_tokens}")
