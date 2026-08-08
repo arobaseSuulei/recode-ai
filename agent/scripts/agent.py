@@ -12,9 +12,6 @@ OPENAI_API_KEY=os.getenv("OPENAI_API_KEY")
 
 def create_agent(prompt):
     
-    
-
-    
 
     instr=open("../prompts/system.yaml").read()
 
