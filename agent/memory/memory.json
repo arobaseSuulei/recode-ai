@@ -1,18 +1,34 @@
 [
     {
         "role": "user",
-        "content": "hey"
+        "content": "red or bleu"
     },
     {
         "role": "assistant",
-        "content": "Hello!"
+        "content": "Boop! Which one are you leaning towards for your project or idea: red or blue?"
     },
     {
         "role": "user",
-        "content": "hey"
+        "content": "My name is Eren Jaeger"
     },
     {
         "role": "assistant",
-        "content": "Hello!"
+        "content": "Nice to meet you, Eren Jaeger! How can I assist you today?"
+    },
+    {
+        "role": "user",
+        "content": "whats my name again ?"
+    },
+    {
+        "role": "assistant",
+        "content": "Your name is Eren Jaeger!"
+    },
+    {
+        "role": "user",
+        "content": "hey how to write my name"
+    },
+    {
+        "role": "assistant",
+        "content": "You can write your name as \"Eren Jaeger.\" If you need it in a specific format or style, let me know!"
     }
 ]
