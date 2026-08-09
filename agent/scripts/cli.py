@@ -8,8 +8,8 @@ def main():
             break
 
         response = create_agent(prompt)
-        print(response.output_text)
-        print(f"Token Output : {response.usage.output_tokens}")
+        #print(response)
+        #print(f"Token Output : {response.usage.output_tokens}")
 
 
 if __name__ == "__main__":

@@ -47,11 +47,20 @@ def create_agent(prompt):
 
     client=OpenAI(api_key=OPENAI_API_KEY)
 
-    response = client.responses.create(
+    stream = client.responses.create(
         model="gpt-4o-mini",
         input=messages,
-        instructions=instr
+        instructions=instr,
+        stream=True
     )
-    add_memory(prompt,response.output_text)
-    return response
+    full_response=""
+
+    for event in stream:
+        if event.type=="response.output_text.delta":
+            print(event.delta,end="",flush=True)
+            full_response+=event.delta
+    print()
+
+    add_memory(prompt,full_response)
+    return full_response
   
