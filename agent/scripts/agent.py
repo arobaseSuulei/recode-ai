@@ -39,6 +39,15 @@ def add_memory(prompt,result):
 
 
 def create_agent(prompt):
+
+    yield{
+        "type":"start"
+    }
+
+    yield{
+        "type":"loading_memory",
+        "text":"reading memory..."
+    }
     history=load_memory()
     instr=open(PROMPT_PATH).read()
     
@@ -57,10 +66,19 @@ def create_agent(prompt):
 
     for event in stream:
         if event.type=="response.output_text.delta":
-            print(event.delta,end="",flush=True)
+            yield{
+                "type":"text_delta",
+                "text":event.delta
+            }
+            
             full_response+=event.delta
     print()
 
     add_memory(prompt,full_response)
-    return full_response
+
+    yield{
+        "type":"completed",
+        "text":full_response
+    }
+
   

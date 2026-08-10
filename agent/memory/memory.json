@@ -1,34 +1,66 @@
 [
     {
         "role": "user",
-        "content": "red or bleu"
+        "content": "hey"
     },
     {
         "role": "assistant",
-        "content": "Boop! Which one are you leaning towards for your project or idea: red or blue?"
+        "content": "Boop! How can I assist you today?"
     },
     {
         "role": "user",
-        "content": "My name is Eren Jaeger"
+        "content": "how u doing"
     },
     {
         "role": "assistant",
-        "content": "Nice to meet you, Eren Jaeger! How can I assist you today?"
+        "content": "I'm doing great, thanks! How about you? What can I help you with today?"
     },
     {
         "role": "user",
-        "content": "whats my name again ?"
+        "content": "hey"
     },
     {
         "role": "assistant",
-        "content": "Your name is Eren Jaeger!"
+        "content": "Hey again! What\u2019s on your mind?"
     },
     {
         "role": "user",
-        "content": "hey how to write my name"
+        "content": "hru"
     },
     {
         "role": "assistant",
-        "content": "You can write your name as \"Eren Jaeger.\" If you need it in a specific format or style, let me know!"
+        "content": "I\u2019m doing well, thank you! How about you?"
+    },
+    {
+        "role": "user",
+        "content": "hey whats my name"
+    },
+    {
+        "role": "assistant",
+        "content": "I don't know your name yet! What should I call you?"
+    },
+    {
+        "role": "user",
+        "content": "call me eren"
+    },
+    {
+        "role": "assistant",
+        "content": "Got it, Eren! How can I assist you today?"
+    },
+    {
+        "role": "user",
+        "content": "whats my name"
+    },
+    {
+        "role": "assistant",
+        "content": "Your name is Eren!"
+    },
+    {
+        "role": "user",
+        "content": "hey"
+    },
+    {
+        "role": "assistant",
+        "content": "Hey, Eren! What\u2019s up?"
     }
 ]
