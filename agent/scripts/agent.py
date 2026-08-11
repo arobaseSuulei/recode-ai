@@ -48,7 +48,9 @@ def create_agent(prompt):
         "type":"loading_memory",
         "text":"reading memory..."
     }
+    
     history=load_memory()
+    
     instr=open(PROMPT_PATH).read()
     
     messages=history+[{"role":"user","content":prompt}]

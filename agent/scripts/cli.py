@@ -13,11 +13,11 @@ def main():
             if event["type"]=="loading_memory":
                 print(event["text"])
             if event["type"]=="start":
-                print("model thinking")
+                print("model is thinking...")
             if event["type"]=="text_delta":
                 print(event["text"],end="",flush=True) 
             if event["type"]=="completed":
-                print("finish")
+                print("✅ Done")
             
                 
 

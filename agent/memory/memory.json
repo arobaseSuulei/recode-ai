@@ -86,5 +86,61 @@
     {
         "role": "assistant",
         "content": "Hey, Eren! How can I help you today?"
+    },
+    {
+        "role": "user",
+        "content": "Hey"
+    },
+    {
+        "role": "assistant",
+        "content": "Hey again! What\u2019s on your mind?"
+    },
+    {
+        "role": "user",
+        "content": "hey"
+    },
+    {
+        "role": "assistant",
+        "content": "Boop! How can I assist you today?"
+    },
+    {
+        "role": "user",
+        "content": "whats my name"
+    },
+    {
+        "role": "assistant",
+        "content": "Boop! I don't know your name yet. What would you like me to call you?"
+    },
+    {
+        "role": "user",
+        "content": "call me eren"
+    },
+    {
+        "role": "assistant",
+        "content": "Got it, Eren! What can I help you with today?"
+    },
+    {
+        "role": "user",
+        "content": "whats my name"
+    },
+    {
+        "role": "assistant",
+        "content": "Your name is Eren!"
+    },
+    {
+        "role": "user",
+        "content": "hey red or blue"
+    },
+    {
+        "role": "assistant",
+        "content": "Blue! What about you?"
+    },
+    {
+        "role": "user",
+        "content": "hey"
+    },
+    {
+        "role": "assistant",
+        "content": "Hey, Eren! What\u2019s up?"
     }
 ]
