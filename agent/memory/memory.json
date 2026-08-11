@@ -78,5 +78,13 @@
     {
         "role": "assistant",
         "content": "Your name is Eren!"
+    },
+    {
+        "role": "user",
+        "content": "hey"
+    },
+    {
+        "role": "assistant",
+        "content": "Hey, Eren! How can I help you today?"
     }
 ]
