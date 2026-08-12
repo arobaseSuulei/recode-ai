@@ -5,6 +5,7 @@ import sys
 from dotenv import load_dotenv
 from pathlib import Path
 import json
+#from agent.tools.calcul import somme
 
 
 
@@ -13,6 +14,9 @@ load_dotenv()
 OPENAI_API_KEY=os.getenv("OPENAI_API_KEY")
 PROMPT_PATH=Path(__file__).parent.parent /"prompts"/"system.yaml"
 MEMORY_PATH=Path(__file__).parent.parent /"memory"/"memory.json"
+
+
+
 
 
 def load_memory():
@@ -63,6 +67,7 @@ def create_agent(prompt):
         input=messages,
         instructions=instr,
         stream=True
+        
     )
     full_response=""
 

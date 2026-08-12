@@ -142,5 +142,13 @@
     {
         "role": "assistant",
         "content": "Hey, Eren! What\u2019s up?"
+    },
+    {
+        "role": "user",
+        "content": "c est quand l \u00e9clipse solaire"
+    },
+    {
+        "role": "assistant",
+        "content": "L'\u00e9clipse solaire la plus proche aura lieu le 14 octobre 2023. Si tu cherches des informations sur une autre date ou un autre \u00e9v\u00e9nement, fais-le moi savoir !"
     }
 ]
