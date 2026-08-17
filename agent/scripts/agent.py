@@ -5,7 +5,8 @@ import sys
 from dotenv import load_dotenv
 from pathlib import Path
 import json
-#from agent.tools.calcul import somme
+from agent.tools.meteo import get_meteo
+from agent.tools import TOOL,TOOL_FUNCTIONS
 
 
 
@@ -56,17 +57,22 @@ def create_agent(prompt):
     history=load_memory()
     
     instr=open(PROMPT_PATH).read()
+
+    # -------------------------
+    # 3. Building context
+    # -------------------------
     
     messages=history+[{"role":"user","content":prompt}]
 
 
     client=OpenAI(api_key=OPENAI_API_KEY)
 
-    stream = client.responses.create(
+    response = client.responses.create(
         model="gpt-4o-mini",
         input=messages,
         instructions=instr,
-        stream=True
+        tools=TOOL
+        
         
     )
     full_response=""

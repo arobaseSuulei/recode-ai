@@ -5,7 +5,7 @@ def get_meteo(city:str)->int:
 GET_WEATHER_TOOL={
     "type":"function",
     "name":"meteo",
-    "description":"Get the weather of a city"
+    "description":"Get the weather of a city",
     "parameters":{
         "type":"object",
         "properties":{

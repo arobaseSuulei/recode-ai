@@ -5,5 +5,5 @@ TOOL=[
 ]
 
 TOOL_FUNCTIONS={
-    "meteo":get_meteo
+    "meteo":get_meteo # exécution de la fonction python
 }
