@@ -1,16 +1,18 @@
-from recode.agent import create_agent
-    
+from recode.harness import Harness
 
 def main():
-    agent=create_agent()
-    
-    print("-- Recode.ai, What are we going to build chief --")
+    print("hello from there")
     while True:
-        user_input=input("> ")
-        if user_input.lower() in ("exit","quit"):
+        r=input("> ")
+        if(r.lower() in ("exit","quit","q")):
+            print("Goodbye.")
             break
-        result=agent.run(user_input,reset=False)
-        print(result)
-        
-if __name__ == "__main__":
+        response=Harness()
+        res=response.handle(r)
+        print(res)
+
+if __name__=="__main__":
     main()
+
+
+    
